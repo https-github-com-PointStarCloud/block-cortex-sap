@@ -1,5 +1,5 @@
 {
-  "label": "Cortex Data Foundation for SAP - Operational Dashboards",
+  "label": "SAP Cortex Data Foundation Operational Dashboards",
   "category_label": "Models",
   "branding": {
     "image_uri": "https://marketplace-api.looker.com/block-icons/cortex_icon.png",
@@ -9,16 +9,20 @@
   "constants": {
     "CONNECTION_NAME": {
       "label": "Connection Name",
+      "value": "cortex-data-foundation-sap",
       "value_constraint": "connection"
     },
     "GCP_PROJECT": {
-      "label": "GCP Project Name"
+      "label": "GCP Project Name",
+      "value": "my-int-cortex-0824"
     },
     "REPORTING_DATASET": {
-      "label": "Reporting Dataset Name"
+      "label": "Reporting Dataset Name",
+      "value": "testdata_sap_reporting"
     },
      "CLIENT": {
-      "label": "SAP Client ID"
+      "label": "SAP Client ID",
+      "value":"100"
     },
      "SIGN_CHANGE": {
       "label": "SAP Sign Change for Income Statement Reports (yes or no)"
@@ -26,9 +30,9 @@
   },
       "models": [
         {
-            "name": "cortex_sap_operational",
+            "name": "sap_cortex_operational",
             "connection_constant": "CONNECTION_NAME"
         }
     ]
-  
+
 }
